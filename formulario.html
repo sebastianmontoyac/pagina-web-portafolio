@@ -15,39 +15,60 @@
         Henri- Emile Matisse </p>
     </header>
     <main>
-      <div class="contenedor_Grid">
-        <h2 class="item">FORMULARIO <br> DE CONTACTO </h2>
-        
-        <form action="" method="post">
-            <ul class="lista-desordenada">
-                <li>
-                  <label for="name">NOMBRES:</label>
-                  <input type="text" id="name" name="user_name">
-                </li>
-                <li>
-                    <label for="name">APELLIDOS:</label>
-                    <input type="text" id="Lastname" name="user_name">
-                  </li>
-                <li>
-                  <label for="mail">CORREO ELECTRONICO:</label>
-                  <input type="email" id="email" name="user_mail">
-                </li>
-                <li>
-                    <label for="mail">CELULAR:</label>
-                    <input type="email" id="cellphone" name="user_mail">
-                  </li>
-                <li>
-                  <label for="msg">MENSAJE:</label>
-                  <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">ENVIAR</button>
-                </li>
-            </ul>
-        </form>
-        
-    
-      </div>
+        <div class="container">
+            <div class="FORMULARIO">FORMULARIO <br>DE CONTACTO</div>
+            <div class="nombres"> 
+               NOMBRES
+            </div>
+            <div class="apellidos">
+                APELLIDOS
+            </div>
+            <div class="correo">
+                CORREO
+            </div>
+            <div class="celular">
+                CELULAR
+            </div>
+            <div class="informacion"> INFORMACION</div>
+            <div class="enviar">
+                <form action="" method="post">
+                    <button>
+                        <input type="submit" value="ENVIAR">
+                           </button>
+                </form>
+               
+            </div>
+            <div class="espacionombre"> 
+                <form action="" method="post">
+                <label for="name"></label>
+                <input class="input espacionombre" type="text" id="fname" name="fname">
+                </form>
+            </div>
+            <div class="espacioapellidos">
+                <form action="" method="post">
+                 <label for="lastname"></label>
+                <input class="input espacioapellidos" type="text" id="Lastname" name="Lastname">
+                </form>
+            </div>
+            <div class="espaciocorreo">
+                <form action="" method="post">
+                 <label for="correo"></label>
+                <input class="input correo" type="email" id="Email" name="Email">
+                </form>
+            </div>
+            <div class="espaciocelular">
+                <form action="" method="post">
+                 <label for="celular"></label>
+                    <input class="input espaciocelular" type="tel" id="Cellphone" name="Cellphone">
+                </form>
+            </div>
+            <div class="espacioinformacion">
+                <form action="" method="post">
+                    <label for="info"></label>
+                       <input class="input espacioinformacion" type="text" id="Info" name="informacion">
+                   </form>
+            </div>
+          </div>
     </main>
     <footer>
       <div class="conteiner-Fotter">

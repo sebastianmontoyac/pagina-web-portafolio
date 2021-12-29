@@ -5,11 +5,10 @@
   font-size: 10px;
   box-sizing: 10px;
   size: 100vh;
-  font-family: 'Spectral', serif;
-  
+  font-family: "Spectral", serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 .cita {
@@ -19,11 +18,11 @@ a{
   margin-bottom: 4rem;
   font-weight: lighter;
   font-style: italic;
-  color: #8C6542;
+  color: #8c6542;
 }
 header h1 {
   font-size: 5rem;
-  font-weight:900;
+  font-weight: 900;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,44 +35,120 @@ header h1 {
   font-size: 3rem;
   display: grid;
   font-weight: bold;
-  grid-template-rows: minmax(100px,1fr);
+  grid-template-rows: minmax(100px, 1fr);
 
-  grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-content: space-evenly;
   align-content: center;
   grid-gap: 3rem;
   padding-left: 5vw;
   padding-right: 5vw;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . nombres espacionombre espacionombre ."
+    ". . apellidos espacioapellidos espacioapellidos ."
+    "FORMULARIO FORMULARIO correo espaciocorreo espaciocorreo ."
+    "FORMULARIO FORMULARIO celular espaciocelular espaciocelular ."
+    ". . informacion espacioinformacion espacioinformacion  ."
+    ". . . . enviar .";
+  place-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+.FORMULARIO {
+  grid-area: FORMULARIO;
+  color: #8D4F04;
+  font-size: 3rem;
+ text-align-last: center;
+ white-space: wrap;
+ overflow: hidden;
+}
+
+.nombres {
+  grid-area: nombres;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.apellidos {
+  grid-area: apellidos;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.correo {
+  grid-area: correo;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.celular {
+  grid-area: celular;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.informacion {
+  grid-area: informacion;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.enviar {
+  grid-area: enviar;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.espacionombre {
+  grid-area: espacionombre;
+ width:23.5rem ; 
+}
+
+.espacioapellidos {
+  grid-area: espacioapellidos;
+  width:23.5rem ;
+}
+
+.espaciocorreo {
+  grid-area: espaciocorreo;
   
 }
-.contenedor_Grid_2 {
-  display: grid;
 
-  grid-template-columns: 40vw 40vw;
-  grid-template-rows: 50vh 50vh;
-  justify-content: space-evenly;
-  justify-self: center;
-  align-items: center;
-  justify-items: center;
+.espaciocelular {
+  grid-area: espaciocelular;
+  
 }
-li{
+
+.espacioinformacion {
+  grid-area: espacioinformacion;
+ 
+}
+.input{
+  width:23.5rem ;
+}
+
+li {
   list-style-type: none;
 }
-.lista-desordenada{
-  display: grid;
-  justify-items:flex-start;
-}
 
-label{
+label {
   font-size: 2rem;
 }
 h1 {
-  color: #DA9037;
+  color: #da9037;
 }
 
 h2 {
   font-size: 3vw;
-  color: #8D4F04;
+  color: #8d4f04;
   text-align: center;
 }
 .vermas {
@@ -81,20 +156,62 @@ h2 {
   text-align: center;
   color: #98938b;
   margin-bottom: 3rem;
-  text-decoration : none;
+  text-decoration: none;
 }
 .datos {
   text-align: center;
-  color: #EFAE67;
+  color: #efae67;
   font-size: 2.5rem;
-  text-decoration : none;
+  text-decoration: none;
 }
-.conteiner-Fotter{
+.conteiner-Fotter {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-content: space-evenly;
   align-content: center;
   grid-gap: 3rem;
   padding-left: 5vw;
-  padding-right: 5vw; 
+  padding-right: 5vw;
 }
+@media screen and (max-width: 688px) {
+  .FORMULARIO{
+    grid-area: FORMULARIO;
+    color: #8D4F04;
+    font-size: 1.5rem;
+   text-align-last: center;
+   white-space: wrap;
+   overflow: hidden;
+  }
+ 
+  .nombres,.apellidos, .correo, .celular, .informacion, .enviar{
+    color: #8D4F04;
+    font-size: 1.5rem;
+  }
+
+  .espacionombre, .espacioapellidos, .espaciocorreo, .espaciocelular, .espacioinformacion{
+    width: 15rem;
+  }
+  
+  .input{
+    width:15rem ;
+  }
+  
+  @media screen and (max-width: 374px) {
+    .FORMULARIO {
+      grid-area: FORMULARIO;
+      color: #8D4F04;
+      font-size: 1rem;
+     text-align-last: center;
+     white-space: wrap;
+     overflow: hidden;
+    }
+    .nombres,.apellidos, .correo, .celular, .informacion, .enviar{
+      color: #8D4F04;
+      font-size: 1rem;
+    }
+    .espacionombre, .espacioapellidos, .espaciocorreo, .espaciocelular, .espacioinformacion{
+      width: 10rem;
+    }
+    .input{
+      width:10rem ;
+    }
