@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: 10px;
+  size: 100vh;
+  font-family: "Spectral", serif;
+}
+
+a {
+  text-decoration: none;
+}
+.cita {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: lighter;
+  font-style: italic;
+  color: #8c6542;
+}
+header h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "PRECIOS PLAN-1 PLAN-2 PLAN-3"
+      "FOTOGRAFIA Descipcion-plan-1 Descripcion-plan-2 descripcion-plan3"
+      "VIDEO Descipcion-plan-1 Descripcion-plan-2 descripcion-plan3"
+      "DIBUJO Descipcion-plan-1 Descripcion-plan-2 descripcion-plan3"
+      "PINTURA Descipcion-plan-1 Descripcion-plan-2 descripcion-plan3"
+      ". comprar-plan1 comprar-plan2 comprar-plan3";
+      margin-bottom: 1.5rem;
+  
+  }
+  
+  .PRECIOS { grid-area: PRECIOS; color: #8D4F04;
+  font-size: 3rem;}
+  
+  .PLAN-1 { grid-area: PLAN-1; color: #DA9037;
+    font-size: 2rem;background-color: #8D4F04; }
+  
+  .PLAN-2 { grid-area: PLAN-2;  color: #DA9037;
+    font-size: 2rem;background-color: #8D4F04;}
+  
+  .PLAN-3 { grid-area: PLAN-3; color: #DA9037;
+    font-size: 2rem; background-color: #8D4F04;}
+  
+  .FOTOGRAFIA { grid-area: FOTOGRAFIA; color: #8D4F04;
+    font-size: 2rem; }
+  
+  .VIDEO { grid-area: VIDEO;  color: #8D4F04;
+    font-size: 2rem;}
+  
+  .DIBUJO { grid-area: DIBUJO; color: #8D4F04;
+    font-size: 2rem; }
+  
+  .PINTURA { grid-area: PINTURA; color: #8D4F04;
+    font-size: 2rem; }
+  
+  .Descipcion-plan-1 { grid-area: Descipcion-plan-1;color: #8D4F04;
+    font-size: 2rem; }
+  
+  .Descripcion-plan-2 { grid-area: Descripcion-plan-2;color: #8D4F04;
+    font-size: 2rem; }
+  
+  .descripcion-plan3 { grid-area: descripcion-plan3;color: #8D4F04;
+    font-size: 2rem; }
+  
+  .comprar-plan1 { grid-area: comprar-plan1;color: #DA9037;
+    font-size: 2rem; background-color: #8D4F04;}
+  
+  .comprar-plan2 { grid-area: comprar-plan2; color: #DA9037;
+    font-size: 2rem;background-color: #8D4F04;}
+  
+  .comprar-plan3 { grid-area: comprar-plan3;color: #DA9037;
+    font-size: 2rem; background-color: #8D4F04;}
+  
+  
+h1 {
+    color: #da9037;
+  }
+  
+  h2 {
+    font-size: 3vw;
+    color: #8d4f04;
+    text-align: center;
+  }
+  .vermas {
+    font-size: 2rem;
+    text-align: center;
+    color: #98938b;
+    margin-bottom: 3rem;
+    text-decoration: none;
+  }
+  .datos {
+    text-align: center;
+    color: #efae67;
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
+  .conteiner-Fotter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: space-evenly;
+    align-content: center;
+    grid-gap: 3rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }

@@ -212,6 +212,7 @@ h2 {
     .espacionombre, .espacioapellidos, .espaciocorreo, .espaciocelular, .espacioinformacion{
       width: 10rem;
     }
+
     .input{
-      width:10rem ;
+      width: 10rem;
     }
