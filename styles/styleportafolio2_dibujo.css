@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: 10px;
+  size: 100vh;
+  font-family: 'Spectral', serif;
+  
+}
+
+a{
+  text-decoration: none;
+}
+.cita {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: lighter;
+  font-style: italic;
+  color: #8C6542;
+}
+header h1 {
+  font-size: 5rem;
+  font-weight:900;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenedor_Grid {
+  font-size: 3rem;
+  display: grid;
+  font-weight: bold;
+  grid-template-rows: minmax(100px,1fr);
+
+  grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+  justify-content: space-evenly;
+  align-content: center;
+  grid-gap: 3rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  
+}
+.contenedor_Grid_2 {
+  display: grid;
+
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-template-rows: 90vh 90vh 90vh 90vh;
+  justify-content: space-evenly;
+  align-content: flex-end;
+}
+img{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.item{
+  align-self: center;
+}
+.item_Video {
+  max-width: 100%;
+  height: auto;
+}
+
+.item_Img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  color: #DA9037;
+}
+
+h2 {
+  font-size: 3vw;
+  color: #8D4F04;
+  text-align: center;
+}
+.vermas {
+  font-size: 2rem;
+  text-align: center;
+  color: #98938b;
+  margin-bottom: 3rem;
+  text-decoration : none;
+}
+.datos {
+  text-align: center;
+  color: #EFAE67;
+  font-size: 2.5rem;
+  text-decoration : none;
+}
+.conteiner-Fotter{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+  justify-content: space-evenly;
+  align-content: center;
+  grid-gap: 3rem;
+  padding-left: 5vw;
+  padding-right: 5vw; 
+}
