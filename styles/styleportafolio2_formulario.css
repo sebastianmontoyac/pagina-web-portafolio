@@ -31,39 +31,23 @@ header h1 {
   text-align: center;
 }
 
-.contenedor_Grid {
-  font-size: 3rem;
-  display: grid;
-  font-weight: bold;
-  grid-template-rows: minmax(100px, 1fr);
 
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-content: space-evenly;
-  align-content: center;
-  grid-gap: 3rem;
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
 .container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 10px 5px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . nombres espacionombre espacionombre ."
-    ". . apellidos espacioapellidos espacioapellidos ."
-    "FORMULARIO FORMULARIO correo espaciocorreo espaciocorreo ."
-    "FORMULARIO FORMULARIO celular espaciocelular espaciocelular ."
-    ". . informacion espacioinformacion espacioinformacion  ."
-    ". . . . enviar .";
-  place-self: center;
-  align-items: center;
-  align-content: center;
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(1, 1fr); 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "nombres nombres nombres . ."
+    "apellidos apellidos apellidos . ."
+    "correo correo correo . ."
+    "celular celular celular . ."
+    "informacion informacion informacion . ."
+    ". . . enviar ."; 
 }
 
 .FORMULARIO {
-  grid-area: FORMULARIO;
+ 
   color: #8D4F04;
   font-size: 3rem;
  text-align-last: center;
@@ -214,4 +198,5 @@ h2 {
     }
 
     .input{
-      width: 10rem ;}
+      width: 10rem;
+    }
